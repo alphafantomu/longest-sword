@@ -1,0 +1,79 @@
+{
+	"name": "longest-sword",
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"common": {
+				"$path": "src/shared"
+			},
+			"socket": {
+				"$className": "Folder",
+				"replicator": {"$className": "RemoteEvent"},
+				"user": {"$className": "RemoteEvent"},
+				"hitbox": {"$className": "RemoteEvent"},
+				"condition": {"$className": "RemoteEvent"}
+			},
+			"bindings": {
+				"$className": "Folder",
+				"updateLength": {"$className": "BindableEvent"}
+			}
+		},
+		"ServerStorage": {},
+		"ServerScriptService": {
+			"Linker": {
+				"$path": "src/server"
+			}
+		},
+		"ReplicatedFirst": {
+			"Linker": {
+				"$path": "src/client"
+			}
+		},
+		"StarterPlayer": {},
+		"Workspace": {
+			"$properties": {
+				"FilteringEnabled": true
+			},
+			"Baseplate": {
+				"$className": "Part",
+				"$properties": {
+					"Anchored": true,
+					"Color": [
+						0.38823,
+						0.37254,
+						0.38823
+					],
+					"Locked": true,
+					"Position": [
+						0,
+						-10,
+						0
+					],
+					"Size": [
+						512,
+						20,
+						512
+					]
+				}
+			}
+		},
+		"Lighting": {
+			"$properties": {
+				"Ambient": [
+					0,
+					0,
+					0
+				],
+				"Brightness": 2,
+				"GlobalShadows": true,
+				"Outlines": false,
+				"Technology": "Voxel"
+			}
+		},
+		"SoundService": {
+			"$properties": {
+				"RespectFilteringEnabled": true
+			}
+		}
+	}
+}
